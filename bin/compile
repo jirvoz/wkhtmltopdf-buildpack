@@ -19,7 +19,7 @@ BIN_DIR=$(cd $(dirname $0); pwd)
 FONTS_DIR=$(cd "$BIN_DIR/../fonts"; pwd)
 
 if [ -f $WKHTMLTOPDF_PKG ]; then
-  echo "-----> Using wkhtmltopdf Debian package from cache"
+  echo "-----> Using wkhtmltopdf Debian package (bionic) from cache"
 else
   echo "-----> Downloading wkhtmltopdf Debian package"
   curl -L $WKHTMLTOPDF_URL -o $WKHTMLTOPDF_PKG
