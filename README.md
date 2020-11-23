@@ -7,7 +7,7 @@ This is a [Heroku buildpack][0] for bundling a compatible [wkhtmltopdf][1] binar
 ## Versions
 
 * Buildpack:   `0.2`
-* wkhtmltopdf: `0.12.5`
+* wkhtmltopdf: `0.12.6-r1`
 
 ## Usage
 
@@ -28,7 +28,7 @@ $ heroku repo:purge_cache -a appname
 
 ## Troubleshooting
 
-If you run into issues when trying to deploy with this buildpack, make sure your app is running on Cedar with Ubuntu 14.04 (`cedar-14`, heroku-16, or heroku-18). You can check this with:
+If you run into issues when trying to deploy with this buildpack, make sure your app is running on Heroku-20 with Ubuntu 20.04 (heroku-20). You can check this with:
 
 ```bash
 $ heroku stack
